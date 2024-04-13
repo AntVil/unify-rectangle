@@ -1,0 +1,46 @@
+* {
+    color: #eee;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10svh;
+    margin: 0;
+    user-select: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    height: 100svh;
+    background-color: #333;
+}
+
+input{
+    display: none;
+}
+
+label {
+    position: fixed;
+    bottom: 0;
+    margin: 2svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    border: 2px solid #222;
+    border-radius: 3svh;
+    width: 10svh;
+    height: 10svh;
+    cursor: pointer;
+}
+
+input:checked+label {
+    background-color: #AAA;
+    border-color: #666;
+}
+
+label[for="add-point"] {
+    left: 0;
+}
+
+label[for="remove-point"] {
+    right: 0;
+}
